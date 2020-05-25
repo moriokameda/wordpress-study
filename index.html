@@ -1,130 +1,331 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Word-study</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <header>
-        <div class="container-fluid">
-          <div class="row">
-            <h1>
-              <a href="#"><img src="img/logo_header.png" alt=""/></a>
-            </h1>
-            <nav>
-              <ul>
-                <li class="item header-nav"><a href="">TOP</a></li>
-                <li class="item header-nav"><a href="">CONCEPT</a></li>
-                <li class="item header-nav"><a href="">PLAN</a></li>
-                <li class="item header-nav"><a href="">BLOG</a></li>
-                <li class="item header-nav"><a href="">EXTERIOR</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+  <title>VOGUS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 冒頭ページ -->
+  <!-- <div class="splash" data-display-time="1"> -->
+  <div class="splash none_display">
+    <div class="splash_background">
+      <!-- <img src="img/03.jpg" alt=""> -->
+    </div>
+    <div class="splash_main">
+      <div class="splash_img">
+        <img src="img/splash.png" alt="">
+      </div>
+      <div class="splash_body">
+        すべてが洗練された空間、<br>
+        選ばれし人への3邸が誕生。
+      </div>
+    </div>
+  </div>
+  <!-- メインページ -->
+  <div class="main">
+    <!-- ヘッダー -->
+    <header>
+      <div class="header_area">
+        <div class="header_logo">
+          <a href="">
+            <img src="img/logo_header.png" alt="">
+          </a>
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li class="header_nav_item"><a href="#">TOP <span></span></a></li>
+            <li class="header_nav_item">
+              <a href="">CONCEPT</a>
+              <ul class="sub_nav">
+                <li class="sub_nav_item"><a href="">通常記事</a></li>
+                <li class="sub_nav_item"><a href="">アーカイブページ</a></li>
+                <li class="sub_nav_item"><a href="">お知らせ一覧ページ</a></li>
+                <li class="sub_nav_item">
+                  <a href="">固定ページサンプル</a>
+                  <ul>
+                    <li class="sub_nav_item_menu"><a href="">CONCEPT</a></li>
+                    <li class="sub_nav_item_menu"><a href="">EXTERIOR</a></li>
+                    <li class="sub_nav_item_menu"><a href="">LOCATION</a></li>
+                    <li class="sub_nav_item_menu"><a href="">STAFF</a></li>
+                    <li class="sub_nav_item_menu"><a href="">固定ページデフォルト</a></li>
+                    <li class="sub_nav_item_menu"><a href="">固定ページ（サイドバーなし）</a></li>
+                  </ul>
+                </li>
               </ul>
-            </nav>
+            </li>
+            <li class="header_nav_item">
+              <a href="">PLAN</a>
+              <ul class="sub_nav">
+                <li class="sub_nav_item"><a href="">MODERN</a></li>
+                <li class="sub_nav_item"><a href="">SUPERIOR</a></li>
+                <li class="sub_nav_item"><a href="">INFINITY</a></li>
+              </ul>
+            </li>
+            <li class="header_nav_item"><a href="">EXTERIOR</a></li>
+            <li class="header_nav_item">
+              <a href="">BLOG</a>
+              <ul class="sub_nav">
+                <li class="sub_nav_item"><a href="">家づくり</a></li>
+                <li class="sub_nav_item"><a href="">ライフスタイル</a></li>
+                <li class="sub_nav_item"><a href="">エクステリア</a></li>
+                <li class="sub_nav_item"><a href="">インテリア</a></li>
+              </ul>
+            </li>
+            <li class="header_nav_item"><a href="">ダウンロード</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- メインコンテンツ -->
+    <main>
+      <section class="section1">
+        <div class="section1_area">
+          <ul class="section1_list">
+            <li class="section1_item item_active"><a href="" data-target=".img1"><span>CONCEPT</span></a></li>
+            <li class="section1_item"><a href=""><span>MODERN</span></a></li>
+            <li class="section1_item"><a href=""><span>SUPERIOR</span></a></li>
+            <li class="section1_item"><a href=""><span>INFINITY</span></a></li>
+          </ul>
+          <div class="bk_img img1"></div>
+          <div class="bk_img img2">
+            <div class="bk_img_video">
+              <video src="img/02.mp4" autoplay loop muted>
+                <source src="img/02.mp4">
+              </video>
+            </div>
+          </div>
+          <div class="bk_img img3"></div>
+          <div class="bk_img img4">
+            <div class="bk_img_video">
+              <video src="img/01.mp4" autoplay loop muted>
+                <source src="img/01.mp4">
+              </video>
+            </div>
           </div>
         </div>
-      </header>
-      <main>
-        <section>
-          <div class="header-item">
-            <ul class="nav-item u-clear-fix">
-              <li class="item ul-item">
-                <a href="" data-target="#content1">
-                  <span>CONCEPT</span>
-                </a>
-              </li>
-              <li class="item ul-item">
-                <a href="" data-target="#content2">
-                  <span>MODERN</span>
-                </a>
-              </li>
-              <li class="item ul-item">
-                <a href="" data-target="#content3">
-                  <span>EXPERIOR</span>
-                </a>
-              </li>
-              <li class="item ul-item">
-                <a href="" data-target="#content4">
-                  <span>INFINITY</span>
-                </a>
-              </li>
-            </ul>
-            <div
-              id="content1"
-              class="p-hero-header hero-active"
-              style="background-image: url(img/01.jpg);"
-            ></div>
-            <div
-              id="content2"
-              class="p-hero-header"
-              style="background-image: url(img/story.jpg);"
-            >
-              <div class="p-hero-header-content-video">
-                <video loop muted>
-                  <source src="img/02.mp4" />
-                </video>
-              </div>
-            </div>
-            <div
-              id="content3"
-              class="p-hero-header"
-              style="background-image: url(img/hakubo.jpg);"
-            ></div>
-            <div id="content4" class="p-hero-header">
-              <div class="p-hero-header-content-video">
-                <video loop muted>
-                  <source src="img/01.mp4" type="" />
-                </video>
-              </div>
-            </div>
-            <a href="" class="p-hero-header-link">Vogueの魅力を知る</a>
+      </section>
+      <section class="section2">
+        <div>
+          <div>
+            <h2>
+              あなたの人生に最高の煌めきを。<br>
+              洗練された癒しの空間設計。選ばれし人への3邸が誕生。
+            </h2>
+            <p>
+              白を基調としたシックなミニマル空間に溶け込む照明設計と、温かみのあるデザイナーズ木製家具が調和し、上質なやすらぎを与えます。 <br>
+              窓いっぱいに青々と広がるオーシャンビューを眼下に望み、鳥のさえずり、木々の青、潮風の香り、さざ波の音、そのすべてが心地よく感じられます。<br>
+              自然が美しい絶好のロケーションにて優雅な時間に身を委ね、極上の癒しをご体感ください。
+            </p>
           </div>
-
-          <div class="container">
-            <section></section>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="section3_area">
+          <div class="section3_box">
+            <div class="section3_item ">
+              <a href="">
+                <img src="img/t_1.jpg" alt="">
+                <div class="section3_body">
+                  <h2>MODERN</h2>
+                  <span>モダン</span>
+                </div>
+              </a>
+            </div>
+            <div class="section3_item">
+              <a href="">
+                <img src="img/t_2.jpg" alt="">
+                <div class="section3_body">
+                  <h2>SUPERIOR</h2>
+                  <span>スーペリア</span>
+                </div>
+              </a>
+            </div>
+            <div class="section3_item">
+              <a href="">
+                <img src="img/t_3.jpg" alt="">
+                <div class="section3_body">
+                  <h2>INFINITY</h2>
+                  <span>インフィニティ</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <h3>CONCEPT</h3>
+            <p>
+              白を基調としたシックなミニマル空間に溶け込む照明設計と、
+              温かみのあるデザイナーズ木製家具が鮮やかに調和し、
+              上質なやすらぎを与えます。
+              室内の壁材には安全性と機能性に優れた自然由来の素材を採用しております。
+            </p>
+            <a href="">コンセプト</a>
+          </div>
+        </div>
+      </section>
+      <div>
+        <section>
+          <div>
+            <h3>BLOG</h3>
+            <a href="">ブログ一覧</a>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img src="" alt="">
+              </div>
+              <div>
+                <h4><a href=""></a></h4>
+              </div>
+              <div>
+                <p></p>
+              </div>
+              <div>
+                <span></span>
+                <a href=""></a>
+              </div>
+            </div>
+            <div>
+              <img src="" alt="">
+            </div>
+            <div></div>
+            <div></div>
           </div>
         </section>
-      </main>
-      <aside></aside>
-      <footer>
+        <section>
+          <div></div>
+          <div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <a href="">お知らせ一覧</a>
+          </div>
+        </section>
+      </div>
+      <section>
+        <div>
+          <div>
 
-        <h2>お問い合わせはこちら</h2>
-        <form action="">
-          <span>メールアドレス：</span>
-          <input type="email" name="mail" id="mail" /><br />
-          <textarea name="contents" id="contents" cols="30" rows="10">
-            問い合わせ内容詳細
-          </textarea>
-        </form>
-      </footer>
+          </div>
+          <div>
+            <div>
+              <h3>EXTERIOR</h3>
+              <p>白を基調としたミニマル空間に溶け込む照明設計と、
+                温かみのあるデザイナーズ木製家具が調和し、上質なやすらぎを与えます。
+                室内の壁材には、安全性と機能性に優れた自然由来の素材を採用しております。
+              </p>
+              <a href="">エクステリア</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <h3>LOCATION</h3>
+              <p>
+                鳥のさえずり、木々の青、風の香り、波の音、
+                そのすべてが心地よく感じられる素晴らしいロケーションにて、極上の癒しをご体感いただけます。
+              </p>
+              <a href="">ロケーション</a>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">HOME</a>
+                <ul>
+                  <li>ホーム</li>
+                </ul>
+              </li>
+              <li>
+                <a href="">CONCEPT</a>
+                <ul>
+                  <li><a href="">コンセプト</a></li>
+                  <li><a href="">エクステリア</a></li>
+                  <li><a href="">ロケーション</a></li>
+                  <li><a href="">スタッフ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">PLAN</a>
+                <ul>
+                  <li><a href="">モダン</a></li>
+                  <li><a href="">スーペリア</a></li>
+                  <li><a href="">インフィニティ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">EXTERIOR</a>
+                <ul>
+                  <li><a href="">アプローチ</a></li>
+                  <li><a href="">ウッドデッキ</a></li>
+                  <li><a href="">テラス</a></li>
+                  <li><a href="">カーボード</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">BLOG</a>
+                <ul>
+                  <li><a href="">家づくり</a></li>
+                  <li><a href="">ライフスタイル</a></li>
+                  <li><a href="">エクステリア</a></li>
+                  <li><a href="">インテリア</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">CONTACT</a>
+                <ul>
+                  <li><a href="">お問い合わせ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/logo_footer.png" alt="">
+        </div>
+        <div>
+          <p>〒542-0081 大阪府大阪市淀川区 アーキテクツビル30F</p>
+          <p>ブランド事業部 TEL.06-0000-0000　営業時間 /11:00 - 19:00 定休日 / 火曜（祝日を除く）</p>
+          <div>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <p>Copyright © WordPressテーマ「VOGUE (tcd051)」. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <div>
+        <div>
+          <p>VOGUEの魅力を体験してみませんか？内覧会ツアーを実施中！期間：2021/1/1〜2021/12/31</p>
+        </div>
+        <div>
+          <a href="">資料請求のお問い合わせ</a>
+        </div>
+      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+</body>
 </html>

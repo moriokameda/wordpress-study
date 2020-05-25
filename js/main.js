@@ -9,7 +9,9 @@
 
   heroHeader.children('a').on('click', function () {
     heroHeader.removeClass('hero-active');
-    var data = this.attr('data-target');
+    var data = $(this).attr('data-target');
+    $(this).parent('li').addClass('hero-active');
+    console.log(data);
     switch (data) {
       case data === content1.attr('id'):
         content1.addClass('hero-active');
@@ -28,6 +30,7 @@
         content1.addClass('hero-active');
         break;
     }
+    return data;
   });
 
   // content1.hover(function () {
