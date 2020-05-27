@@ -1,8 +1,15 @@
 'use strict';
 
-var imgHeader = document.getElementsByClassName('section1_item');
-imgHeader.children;
-
+var imgHeader = $('.section1_item');
+imgHeader.on('mouseenter', function () {
+  var dataTarget = $(this).children('a').attr('data-target');
+  var bkImgs = $('.bk_img');
+  var bkImg = $(dataTarget);
+  imgHeader.removeClass('item_active');
+  bkImgs.removeClass('item_active');
+  $(this).addClass('item_active');
+  bkImg.addClass('item_active');
+});
   // var content1 = $('#content1');
   // var content2 = $('#content2');
   // var content3 = $('#content3');
